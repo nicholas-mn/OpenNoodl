@@ -8,9 +8,9 @@ OpenNoodl will aim to stay entirely in sync with the original repository, includ
 
 ## One-click install
 
-[OpenNoodl 1.0.0 for MacOS Intel]()
-[OpenNoodl 1.0.0 for MacOS Silicon]()
-[OpenNoodl 1.0.0 for Windows]()
+[OpenNoodl 1.0.0 for MacOS Intel](https://drive.google.com/file/d/1i8-uxLIx3fBJWpuoEqlYWobhsj-f1DJt/view?usp=sharing)
+[OpenNoodl 1.0.0 for MacOS Silicon](https://drive.google.com/file/d/1UvX-zIMz7ga8XyMYLMBOOxmgavoDkCMu/view?usp=sharing)
+[OpenNoodl 1.0.0 for Windows](https://drive.google.com/file/d/1osDXzm2Reaa4doxP3ZvMRgL34ShhGdfx/view?usp=sharing)
 
 ## Building from source
 
