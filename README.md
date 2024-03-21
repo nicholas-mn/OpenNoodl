@@ -1,3 +1,21 @@
+# OpenNoodl
+
+OpenNoodl is a fork of the original Noodl open source code under GPL-3.0 license. OpenNoodl / Noodl is a front end React app builder with a visual programming interface. 
+
+OpenNoodl will aim to stay entirely in sync with the original repository, including future updates to this repository. A roadmap for updates will be published soon.
+
+# Installing OpenNoodl
+
+## One-click install
+
+[OpenNoodl 1.0.0 for MacOS Intel]()
+[OpenNoodl 1.0.0 for MacOS Silicon]()
+[OpenNoodl 1.0.0 for Windows]()
+
+## Building from source
+
+See the original Noodl documentation below
+
 # Noodl
 
 [Noodl](https://noodl.net) is a low-code platform where designers and developers build custom applications and experiences. Designed as a visual programming environment, it aims to expedite your development process. It promotes the swift and efficient creation of applications, requiring minimal coding knowledge.
