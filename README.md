@@ -1,10 +1,10 @@
-# OpenNoodl
+# Code Crusher
 
-OpenNoodl is a fork of the original Noodl open source code under GPL-3.0 license. OpenNoodl / Noodl is a front end React app builder with a visual programming interface. 
+Code Crusher is a fork of the original Noodl open source code under GPL-3.0 license. OpenNoodl / Noodl is a front end React app builder with a visual programming interface. 
 
-OpenNoodl will aim to stay entirely in sync with the original repository, including future updates to this repository. A roadmap for updates will be published soon.
+Code Crusher will aim to stay entirely in sync with the original repository, including future updates to this repository. A roadmap for updates will be published soon.
 
-# Installing OpenNoodl
+# Installing Code Crusher
 
 ## One-click install
 
