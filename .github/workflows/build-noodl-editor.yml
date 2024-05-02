@@ -1,4 +1,4 @@
-name: Build noodl-editor
+name: Build Code Crusher
 
 on:
   # Allows you to run this workflow manually from the Actions tab
@@ -11,7 +11,7 @@ on:
   #   types: [created]
     
 jobs:
-  build_noodl_editor:
+  build_code_crusher:
     runs-on: ${{ matrix.os }}
 
     strategy:
@@ -55,12 +55,12 @@ jobs:
       - name: Install dependencies 🏗
         run: npm install
 
-      - name: Build Noodl Viewer (build bundles and copy them to Noodl Editor)
+      - name: Build Code Crusher Viewer (build bundles and copy them to Code Crusher Editor)
         run: npm run build:editor:_viewer
         env:
           WORKSPACE_PATH: .
 
-      - name: Build Noodl Editor (build bundles etc and signing)
+      - name: Build Code Crusher Editor (build bundles etc and signing)
         run: npm run build:editor:_editor
         env:
           WORKSPACE_PATH: .
@@ -72,6 +72,6 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-artifact@v3
         with:
-          name: noodl-editor-${{ matrix.platform }}-${{ github.head_ref }}-${{ github.sha }}
+          name: code-crusher-${{ matrix.platform }}-${{ github.head_ref }}-${{ github.sha }}
           path: publish
           retention-days: "12"

@@ -1,10 +1,10 @@
 {
-  "name": "noodl-editor",
-  "productName": "OpenNoodl Editor",
+  "name": "code-crusher-editor",
+  "productName": "Code Crusher",
   "description": "Full stack low code React app builder",
   "author": "The Low Code Foundation",
   "homepage": "https://thelowcodefoundation.com",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "src/main/main.js",
   "scripts": {
     "build": "npx ts-node -P ./tsconfig.build.json ./scripts/build.ts",
