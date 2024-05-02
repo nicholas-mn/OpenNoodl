@@ -1,9 +1,9 @@
 {
   "private": true,
-  "name": "@noodl/repo",
+  "name": "@thelowcodefoundation/repo",
   "description": "Low-code for when experience matter",
-  "author": "Noodl <info@noodl.net>",
-  "homepage": "https://noodl.net",
+  "author": "The Low Code Foundation <contact@thelowcodefoundation.com>",
+  "homepage": "https://code-crusher.com",
   "version": "1.0.0",
   "workspaces": [
     "packages/*"
