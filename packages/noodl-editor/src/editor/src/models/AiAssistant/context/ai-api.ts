@@ -38,13 +38,14 @@ async function directChatOpenAi({ messages, provider, abortController, onEnd, on
       stream: true
     }),
     async onopen(response) {
-      if (response.ok && response.headers.get('content-type') === EventStreamContentType) {
+      const contentType = response.headers.get('content-type') || '';
+      if (response.ok && contentType.includes('text/event-stream')) {
         return; // everything's good
-      } else if (response.status >= 400 && response.status < 500 && response.status !== 429) {
-        // client-side errors are usually non-retriable:
-        throw 'FatalError';
       } else {
-        throw 'RetriableError';
+        // If status is not OK or content type is unexpected, throw the response body
+        const errorMessage = await response.text(); // Await the response body text
+        const errorDetails = `HTTP ${response.status} - ${response.statusText}: ${errorMessage}`;
+        throw errorDetails; // Throw the raw error string
       }
     },
     onmessage(ev) {
@@ -70,18 +71,10 @@ async function directChatOpenAi({ messages, provider, abortController, onEnd, on
       onEnd && onEnd();
     },
     onerror(err) {
-      const errText = err.toString();
-      if (['FatalError'].includes(errText)) {
-        throw err; // rethrow to stop the operation
-      } else if (['RetriableError'].includes(errText)) {
-        if (tries <= 0) {
-          throw `Apologies, OpenAI is currently facing heavy traffic, causing delays in processing requests. Please be patient and try again later.`;
-        }
-        tries--;
-      } else {
-        // do nothing to automatically retry. You can also
-        // return a specific retry interval here.
+      if (tries <= 0) {
+        throw err; // Just rethrow the error directly
       }
+      tries--;
     }
   });
 
