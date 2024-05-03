@@ -8,9 +8,9 @@ Code Crusher will aim to stay entirely in sync with the original repository, inc
 
 ## One-click install
 
-* [OpenNoodl 1.0.0 for MacOS Intel](https://drive.google.com/file/d/1plShpNgJCTh2-nXf_2B_bN9zU5vvWiFY/view?usp=sharing)
-* [OpenNoodl 1.0.0 for MacOS Silicon](https://drive.google.com/file/d/1wYHtiYEQaV459a73gxrm5TtZLt-yRck5/view?usp=sharing)
-* [OpenNoodl 1.0.0 for Windows](https://drive.google.com/file/d/1osDXzm2Reaa4doxP3ZvMRgL34ShhGdfx/view?usp=sharing)
+* [Code Crusher 1.0.1 for MacOS Intel](https://drive.google.com/file/d/11XPs0GjmNdQ4NxQLrtW5hlDqo21Fj_bs/view?usp=sharing)
+* [Code Crusher 1.0.1 for MacOS Silicon](https://drive.google.com/file/d/1sGhGTTMTSS-1LBnFPfyg_eWxDPLaUexy/view?usp=sharing)
+* [Code Crusher 1.0.1 for Windows](https://drive.google.com/file/d/10N8lZ-NlAO_Cr6Wi1o0CJHVepuVTpEtj/view?usp=drive_link)
 
 ## Building from source
 
