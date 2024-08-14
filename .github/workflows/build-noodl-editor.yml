@@ -1,4 +1,4 @@
-name: Build Code Crusher
+name: Build OpenNoodl
 
 on:
   # Allows you to run this workflow manually from the Actions tab
@@ -55,12 +55,12 @@ jobs:
       - name: Install dependencies 🏗
         run: npm install
 
-      - name: Build Code Crusher Viewer (build bundles and copy them to Code Crusher Editor)
+      - name: Build OpenNoodl Viewer (build bundles and copy them to OpenNoodl Editor)
         run: npm run build:editor:_viewer
         env:
           WORKSPACE_PATH: .
 
-      - name: Build Code Crusher Editor (build bundles etc and signing)
+      - name: Build OpenNoodl Editor (build bundles etc and signing)
         run: npm run build:editor:_editor
         env:
           WORKSPACE_PATH: .
