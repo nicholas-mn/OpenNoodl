@@ -23,7 +23,7 @@ export const template: AiNodeTemplate = {
     console.log('using version: ', version);
 
     try {
-      if ((version === 'enterprise' && OpenAiStore.getModel() === 'gpt-4') || version === 'full-beta') {
+      if ((version === 'enterprise' && OpenAiStore.getModel() === 'gpt-4o-mini') || version === 'full-beta') {
         await GPT4.execute(context);
       } else {
         await GPT3.execute(context);

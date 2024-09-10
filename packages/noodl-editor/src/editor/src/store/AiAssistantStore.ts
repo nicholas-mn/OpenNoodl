@@ -20,7 +20,7 @@ const AI_ASSISTANT_MODEL_KEY = 'aiAssistant.model';
 
 export type AiVersion = 'disabled' | 'full-beta' | 'enterprise';
 
-export type AiModel = 'gpt-3' | 'gpt-4';
+export type AiModel = 'gpt-3' | 'gpt-4o-mini';
 
 export const OpenAiStore = {
   isEnabled(): boolean {
