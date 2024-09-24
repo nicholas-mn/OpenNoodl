@@ -11,7 +11,7 @@ on:
   #   types: [created]
     
 jobs:
-  build_code_crusher:
+  build_opennoodl:
     runs-on: ${{ matrix.os }}
 
     strategy:
@@ -72,6 +72,6 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-artifact@v3
         with:
-          name: code-crusher-${{ matrix.platform }}-${{ github.head_ref }}-${{ github.sha }}
+          name: opennoodl-${{ matrix.platform }}-${{ github.head_ref }}-${{ github.sha }}
           path: publish
           retention-days: "12"

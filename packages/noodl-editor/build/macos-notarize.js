@@ -11,7 +11,7 @@ module.exports = async function (params) {
     return;
   }
 
-  const appId = 'com.code-crusher.app';
+  const appId = 'com.opennoodl.app';
 
   const appPath = path.join(params.appOutDir, `${params.packager.appInfo.productFilename}.app`);
   if (!fs.existsSync(appPath)) {

@@ -15,30 +15,30 @@
     "test:ci": "webpack-cli --config=webpackconfigs/webpack.test-ci.js && electron test.js"
   },
   "build": {
-    "appId": "com.code-crusher.app",
+    "appId": "com.opennoodl.app",
     "afterSign": "./build/macos-notarize.js",
     "mac": {
       "hardenedRuntime": true,
       "entitlements": "build/entitlements.mac.plist",
       "extendInfo": {
         "LSMultipleInstancesProhibited": true,
-        "NSMicrophoneUsageDescription": "Allow Code-Crusher apps that you create and run to access the microphone?",
-        "NSCameraUsageDescription": "Allow Code-Crusher apps that you create and run to access the camera?"
+        "NSMicrophoneUsageDescription": "Allow OpenNoodl apps that you create and run to access the microphone?",
+        "NSCameraUsageDescription": "Allow OpenNoodl apps that you create and run to access the camera?"
       }
     },
     "win": {
       "target": "nsis"
     },
     "nsis": {
-      "guid": "com.code-crusher.app"
+      "guid": "com.opennoodl.app"
     },
     "linux": {
       "target": "deb"
     },
     "protocols": {
-      "name": "code-crusher",
+      "name": "opennoodl",
       "schemes": [
-        "code-crusher"
+        "opennoodl"
       ]
     },
     "npmRebuild": false,
