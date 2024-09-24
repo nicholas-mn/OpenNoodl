@@ -29,7 +29,7 @@ export function OpenAiSection() {
   async function onVerifyApiKey() {
     const models = await verifyOpenAiApiKey(apiKey);
     if (models) {
-      const haveGpt4 = !!models['gpt-4'];
+      const haveGpt4 = !!models['gpt-4o-mini'];
       if (haveGpt4) {
         OpenAiStore.setIsAiApiKeyVerified(true);
         ToastLayer.showSuccess('OpenAI API Key is valid with GPT-4!');
@@ -78,7 +78,7 @@ export function OpenAiSection() {
                   properties={{
                     options: [
                       { label: 'gpt-3', value: 'gpt-3' },
-                      { label: 'gpt-4', value: 'gpt-4' }
+                      { label: 'gpt-4', value: 'gpt-4o-mini' }
                     ]
                   }}
                   onChange={(value: AiModel) => {
@@ -121,7 +121,7 @@ export function OpenAiSection() {
                   properties={{
                     options: [
                       { label: 'gpt-3', value: 'gpt-3' },
-                      { label: 'gpt-4', value: 'gpt-4' }
+                      { label: 'gpt-4', value: 'gpt-4o-mini' }
                     ]
                   }}
                   onChange={(value: AiModel) => {

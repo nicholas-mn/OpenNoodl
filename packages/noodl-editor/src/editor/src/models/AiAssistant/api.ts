@@ -38,7 +38,7 @@ export namespace AiAssistantApi {
       version: '0.0.0',
       models: [
         {
-          name: 'gpt-4',
+          name: 'gpt-4o-mini',
           displayName: 'gpt-4 (8k context)',
           promptTokenCost: 0.03,
           completionTokenCost: 0.06

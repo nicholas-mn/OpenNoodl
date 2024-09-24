@@ -79,7 +79,7 @@ export default function Clippy() {
     const version = OpenAiStore.getVersion();
     if (version === 'enterprise') {
       setHasApiKey(true);
-      setHasGPT4(OpenAiStore.getModel() === 'gpt-4');
+      setHasGPT4(OpenAiStore.getModel() === 'gpt-4o-mini');
     } else if (version === 'full-beta') {
       setHasApiKey(OpenAiStore.getIsAiApiKeyVerified());
     } else {
@@ -94,10 +94,10 @@ export default function Clippy() {
     async function doIt() {
       const version = OpenAiStore.getVersion();
       if (version === 'enterprise') {
-        setHasGPT4(OpenAiStore.getModel() === 'gpt-4');
+        setHasGPT4(OpenAiStore.getModel() === 'gpt-4o-mini');
       } else {
         const models = await verifyOpenAiApiKey(OpenAiStore.getApiKey());
-        setHasGPT4(!!models['gpt-4']);
+        setHasGPT4(!!models['gpt-4o-mini']);
       }
     }
 
