@@ -12,6 +12,16 @@ OpenNoodl will aim to stay entirely in sync with the original repository, includ
 * [Code Crusher 1.0.1 for MacOS Silicon](https://drive.google.com/file/d/1sGhGTTMTSS-1LBnFPfyg_eWxDPLaUexy/view?usp=sharing)
 * [Code Crusher 1.0.1 for Windows](https://drive.google.com/file/d/10N8lZ-NlAO_Cr6Wi1o0CJHVepuVTpEtj/view?usp=drive_link)
 
+## Integrated back-end
+
+### Cloud hosted
+
+OpenNoodl has native CRUD nodes that work with Parse Server backends. [OpenNoodl Hosting](https://opennoodl-hosting.com) provides free and paid Parse Server backends to help you get started.
+
+### Self hosted
+
+If you prefer self-hosting or a local backend, while still taking advantage of the native OpenNoodl CRUD nodes, check out the repositories of the original [Noodl Cloud Services backend](https://github.com/The-Low-Code-Foundation/opennoodl-cloudservice) (Parse and cloud functions), as well as the new [OpenNoodl Better Backend](https://github.com/The-Low-Code-Foundation/opennoodl-better-backend) (Parse and n8n).
+
 ## Building from source
 
 See the original Noodl documentation below
