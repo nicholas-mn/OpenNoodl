@@ -12,6 +12,13 @@ OpenNoodl will aim to stay entirely in sync with the original repository, includ
 * [Code Crusher 1.1.0 for MacOS Silicon](https://github.com/The-Low-Code-Foundation/OpenNoodl/releases/download/release/OpenNoodl.1.1.0.Apple.Silicon.dmg)
 * [Code Crusher 1.1.0 for Windows](https://github.com/The-Low-Code-Foundation/OpenNoodl/releases/download/release/OpenNoodl.1.1.0.Windows.exe)
 
+# Getting started
+
+## Beginner resources
+
+* [Tutorials and basic info](https://learn-noodl.com)
+* [Resources and community components](https://the-low-code-foundation.fibery.io/invite/5NtlTThnCPh2vaAk)
+
 ## Integrated back-end
 
 ### Cloud hosted
