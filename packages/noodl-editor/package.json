@@ -33,7 +33,7 @@
       "guid": "com.opennoodl.app"
     },
     "linux": {
-      "target": "deb"
+      "target": "appimage"
     },
     "protocols": {
       "name": "opennoodl",
