@@ -20,6 +20,7 @@ import { BuildTarget, getDistPlatform } from './platform/build-platforms';
   console.log('@ -> packages/noodl-editor/scripts/build.ts');
   console.log('--- Configuration');
   console.log('> DISABLE_SIGNING: ', DISABLE_SIGNING);
+  console.log('> BUILD_AS_DIR: ', BUILD_AS_DIR);
   console.log('> TARGET_PLATFORM: ', TARGET_PLATFORM);
   console.log('---');
 
