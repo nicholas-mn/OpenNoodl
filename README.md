@@ -8,9 +8,16 @@ OpenNoodl will aim to stay entirely in sync with the original repository, includ
 
 ## One-click install
 
-* [Code Crusher 1.1.0 for MacOS Intel](https://github.com/The-Low-Code-Foundation/OpenNoodl/releases/download/release/OpenNoodl.1.1.0.Apple.Intel.dmg)
-* [Code Crusher 1.1.0 for MacOS Silicon](https://github.com/The-Low-Code-Foundation/OpenNoodl/releases/download/release/OpenNoodl.1.1.0.Apple.Silicon.dmg)
-* [Code Crusher 1.1.0 for Windows](https://github.com/The-Low-Code-Foundation/OpenNoodl/releases/download/release/OpenNoodl.1.1.0.Windows.exe)
+* [OpenNoodl 1.1.0 for MacOS Intel](https://github.com/The-Low-Code-Foundation/OpenNoodl/releases/download/release/OpenNoodl.1.1.0.Apple.Intel.dmg)
+* [OpenNoodl 1.1.0 for MacOS Silicon](https://github.com/The-Low-Code-Foundation/OpenNoodl/releases/download/release/OpenNoodl.1.1.0.Apple.Silicon.dmg)
+* [OpenNoodl 1.1.0 for Windows](https://github.com/The-Low-Code-Foundation/OpenNoodl/releases/download/release/OpenNoodl.1.1.0.Windows.exe)
+
+## Arch Linux
+
+On Arch Linux, OpenNoodl can be installed [from the AUR](https://aur.archlinux.org/packages/opennoodl):
+```
+yay -S opennoodl
+```
 
 # Getting started
 
