@@ -52,7 +52,10 @@ const regexList: RegExp[] = [
 
   /* MacOS */
   /.*\.dmg$/,
-  /.*\.blockmap$/
+  /.*\.blockmap$/,
+
+  /* Linux */
+  /.*\.AppImage$/,
 ];
 
 fs.mkdirSync(destinationFolder, { recursive: true });
