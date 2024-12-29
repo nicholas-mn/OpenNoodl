@@ -6,7 +6,6 @@ import { BuildTarget, getDistPlatform } from './platform/build-platforms';
 (async function () {
   // Inputs
   const DISABLE_SIGNING = valueToBoolean(process.env.DISABLE_SIGNING);
-  const BUILD_AS_DIR = valueToBoolean(process.env.BUILD_AS_DIR);
   const TARGET_PLATFORM = process.env.TARGET_PLATFORM;
 
   if (!TARGET_PLATFORM) throw new Error('TARGET_PLATFORM is falsy');
@@ -20,7 +19,6 @@ import { BuildTarget, getDistPlatform } from './platform/build-platforms';
   console.log('@ -> packages/noodl-editor/scripts/build.ts');
   console.log('--- Configuration');
   console.log('> DISABLE_SIGNING: ', DISABLE_SIGNING);
-  console.log('> BUILD_AS_DIR: ', BUILD_AS_DIR);
   console.log('> TARGET_PLATFORM: ', TARGET_PLATFORM);
   console.log('---');
 
@@ -41,14 +39,10 @@ import { BuildTarget, getDistPlatform } from './platform/build-platforms';
   console.log('--- done!');
 
   const platformName = getDistPlatform(target.platform);
-  let args = [`--${target.arch}`, `--${platformName}`];
-  if (BUILD_AS_DIR === true) {
-      args.push('--dir');
-  }
-  const argsStr = args.join(' ');
+  const args = [`--${platformName}`, `--${target.arch}`].join(' ');
 
-  console.log(`--- Run: 'npx electron-builder ${argsStr}' ...`);
-  execSync('npx electron-builder ' + argsStr, {
+  console.log(`--- Run: 'npx electron-builder ${args}' ...`);
+  execSync('npx electron-builder ' + args, {
     stdio: [0, 1, 2],
     env: Object.assign(
       DISABLE_SIGNING
